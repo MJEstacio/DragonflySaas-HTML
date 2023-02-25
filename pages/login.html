@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="https://kit.fontawesome.com/6c43f4ca38.js" crossorigin="anonymous"></script>
+  <title>Dragonfly</title>
+
+</head>
+
+<body>
+  <main class="account-section">
+    <div class="container">
+      <div class="logo-container"> <a href="../index.html"><img src="../images/logo1.png" alt=""></a></div>
+      <h1 class="header-line header-line3">Welcome</h1>
+
+      <span>Log in with</span>
+      <div class="social-container">
+        <div class="social-card">
+          <a href=""> <i class="fa-brands fa-google"></i>
+            <span>Google</span></a>
+        </div>
+        <div class="social-card">
+          <a href=""><i class="fa-brands fa-facebook"></i>
+            <span>Facebook</span></a>
+        </div>
+        <div class="social-card">
+          <a href=""><i class="fa-solid fa-circle"></i>
+            <span>Option 3</span></a>
+        </div>
+        <div class="social-card">
+          <a href=""> <i class="fa-solid fa-circle"></i>
+            <span>Option 4</span></a>
+        </div>
+      </div>
+      <div class="account-divider">
+        <hr>
+        <span>OR</span>
+      </div>
+      <form action="" id="login-form">
+        <label for="username-email">Username or Email</label>
+        <input type="text">
+        <label for="password">Password</label>
+        <div class="password-container">
+          <input type="password" id="password">
+          <i class="fa-solid fa-eye" id="show-password"></i>
+        </div>
+        <span class="forgot-pass">Forgot Password?</span>
+
+        <input type="submit" class="login" value="LOGIN">
+        <div class="register-link">
+          <span>Don’t have an account? <a href="./register.html">Register Now</a></span>
+        </div>
+      </form>
+      <div class="account-footer">
+        <a href="./privacy.html">Privacy & Terms</a>
+        <hr>
+        <a href="./contact us.html">Contact Us</a>
+      </div>
+    </div>
+
+  </main>
+  <div class="overlay modal-hidden"></div>
+  <div class="error-modal modal-hidden">
+    <div class="modal-header">
+      <h1>Unable to Login
+      </h1>
+      <button class="close-btn">&times;</button>
+    </div>
+
+    <form action="" id="forgot-pass">
+      <p>Email Address/User Name used when registering</p>
+      <input type="text" placeholder="Enter your username or email">
+      <div class="modal-button-container">
+        <input type="button" class="reset-btn" value="RESET 2FA">
+        <input type="button" class="forgot-btn" value="FORGOT PASSWORD">
+      </div>
+    </form>
+  </div>
+  <script src="../scripts/password.js"></script>
+</body>
+
+</html>
